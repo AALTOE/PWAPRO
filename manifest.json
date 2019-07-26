@@ -1,0 +1,45 @@
+{
+  "name": "Alex es Batman",
+  "short_name": "AA_PWA",
+  "description": "Esta es mi app con PWA",
+    "icons": [
+      {
+        "src": "android/icon-36-ldpi.png",
+        "type": "image/png",
+        "sizes": "36x36"
+      },
+      {
+        "src": "android/icon-48-mdpi.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "android/icon-72-hdpi.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "android/icon-96-xhdpi.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "android/Batman-512.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "android/Batman-192x512.png",
+        "type": "image/png",
+        "sizes": "192x512"
+      }
+
+    ],
+    "start_url": "index.html?launcher=true",
+    "scope": "/",
+    "display": "fullscreen",
+    "background_color": "#9C27B0",
+    "theme_color": "#9C27B0"
+  }
+  
+  
