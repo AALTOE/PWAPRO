@@ -6,7 +6,7 @@ const butInstall = document.getElementById("butInstall");
 /* Only register a service worker if it's supported */
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
+      navigator.serviceWorker.register('https://owlsalex.github.io/PWAPRO/sw.js').then(function(registration) {
         // Registration was successful
         console.log('Registro de ServiceWorker exitoso con alcance: ', registration.scope);
       }, function(err) {
