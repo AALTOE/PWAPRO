@@ -29,7 +29,9 @@
       <div class="navbar-translate">
         <a class="navbar-brand" href="#">
          Progresive Web App </a>
-         <button type="button" id="add-to" class="btn bg-danger">Instalar</button>
+         <div id="installContainer" class="hidden">
+          <button id="butInstall" type="button"  class="btn bg-danger">Instalar</button>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -80,40 +82,20 @@
         <div id="nav-tabs">
           <h3>El manifiesto de las apps web</h3>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h3>
-                <small>Tabs on Plain Card</small>
+                <small>¿Qué es?</small>
               </h3>
               <!-- Tabs on Plain Card -->
               <div class="card card-nav-tabs card-plain">
-                <div class="card-header card-header-danger">
-                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#updates" data-toggle="tab">Updates</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#history" data-toggle="tab">History</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="card-body ">
                   <div class="tab-content text-center">
                     <div class="tab-pane active" id="home">
-                      <p>I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it&#x2019;s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
-                    </div>
-                    <div class="tab-pane" id="updates">
-                      <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
-                    </div>
-                    <div class="tab-pane" id="history">
-                      <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                      <p>Es un archivo JSON simple que permite que tú, el desarrollador, puedas controlar cómo se muestra tu app al usuario.
+                      </p>
+                      <br>
+                      <p>Permite convertir paginas web en aplicaciones Adroid al precionar el botón rojo que dice "Instalar".</p>
                     </div>
                   </div>
                 </div>
