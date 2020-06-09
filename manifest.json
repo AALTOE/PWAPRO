@@ -38,7 +38,7 @@
     "start_url": "index.html",
     "background_color": "#9C27B0",
     "display": "fullscreen",
-    "scope": "/",
+    
     "theme_color": "#9C27B0"
   }
   
