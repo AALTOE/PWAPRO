@@ -2,16 +2,8 @@ const divInstall = document.getElementById('installContainer');
 const butInstall = document.getElementById('butInstall');
 
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('Registro de ServiceWorker exitoso con alcance: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('El registro de ServiceWorker falló: ', err);
-      });
-    });
-  }
+  navigator.serviceWorker.register('sw.js');
+}
 
   window.addEventListener("beforeinstallprompt", event => {
     console.log("👍", "beforeinstallprompt", event);
