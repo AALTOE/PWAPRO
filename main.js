@@ -2,17 +2,26 @@ const divInstall = document.getElementById('installContainer');
 const butInstall = document.getElementById('butInstall');
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
-}
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('Registro de ServiceWorker exitoso con alcance: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('El registro de ServiceWorker falló: ', err);
+      });
+    });
+  }
 
-  window.addEventListener("beforeinstallprompt", event => {
-    console.log("👍", "beforeinstallprompt", event);
-    // Stash the event so it can be triggered later.
-    window.deferredPrompt = event;
-    // Remove the 'hidden' class from the install button container
-    divInstall.classList.toggle("hidden", false);
+  window.addEventListener('load', function() {
+    window.addEventListener("beforeinstallprompt", event => {
+      console.log("👍", "beforeinstallprompt", event);
+      // Stash the event so it can be triggered later.
+      window.deferredPrompt = event;
+      // Remove the 'hidden' class from the install button container
+      divInstall.classList.toggle("hidden", false);
+    });
   });
-
   butInstall.addEventListener('click', () => {
     console.log('👍', 'Botón de instalacion precionado');
     const promptEvent = window.deferredPrompt;
