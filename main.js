@@ -17,20 +17,12 @@ if ('serviceWorker' in navigator) {
   }
 
 
-/*window.addEventListener("beforeinstallprompt", event => {
+window.addEventListener("beforeinstallprompt", event => {
   console.log("👍", "beforeinstallprompt", event);
   // Stash the event so it can be triggered later.
   window.deferredPrompt = event;
   // Remove the 'hidden' class from the install button container
   divInstall.classList.toggle("hidden", false);
-});*/
-
-window.addEventListener("beforeinstallprompt", function(e) { 
-  // log the platforms provided as options in an install prompt 
-  console.log(e.platforms); // e.g., ["web", "android", "windows"] 
-  e.userChoice.then(function(choiceResult) { 
-    console.log(choiceResult.outcome); // either "accepted" or "dismissed"
-  }, handleError); 
 });
 
 butInstall.addEventListener("click", () => {
