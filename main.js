@@ -1,3 +1,6 @@
+const divInstall = document.getElementById('installContainer');
+const butInstall = document.getElementById('butInstall');
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('sw.js').then(function(registration) {
@@ -10,15 +13,12 @@ if ('serviceWorker' in navigator) {
     });
   }
 
-  const divInstall = document.getElementById('installContainer');
-  const butInstall = document.getElementById('butInstall');
-
-  window.addEventListener('beforeinstallprompt', (event) => {
-    console.log('👍', 'beforeinstallprompt', event);
+  window.addEventListener("beforeinstallprompt", event => {
+    console.log("👍", "beforeinstallprompt", event);
     // Stash the event so it can be triggered later.
     window.deferredPrompt = event;
     // Remove the 'hidden' class from the install button container
-    divInstall.classList.toggle('hidden', false);
+    divInstall.classList.toggle("hidden", false);
   });
 
   butInstall.addEventListener('click', () => {
