@@ -14,7 +14,7 @@ if ('serviceWorker' in navigator) {
   }
 
   let deferredPrompt;
-  const addBtn = document.querySelector('butInstall');
+  const addBtn = document.getElementById('butInstall');
   addBtn.style.display = 'none';
 
   window.addEventListener('beforeinstallprompt', (e) => {
@@ -41,7 +41,7 @@ if ('serviceWorker' in navigator) {
         });
     });
   });
-  
+
 
   window.addEventListener('appinstalled', (event) => {
     console.log('👍', 'App instalada', event);
