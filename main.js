@@ -26,6 +26,7 @@ if ('serviceWorker' in navigator) {
     const promptEvent = window.deferredPrompt;
     if (!promptEvent) {
       // The deferred prompt isn't available.
+        console.log('El mensaje diferido no está disponible.');
       return;
     }
     // Show the install prompt.
