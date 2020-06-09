@@ -42,6 +42,6 @@ if ('serviceWorker' in navigator) {
   });
 
   window.addEventListener('appinstalled', (event) => {
-    console.log('👍', 'App instalada', event);
+    //console.log('👍', 'App instalada', event);
   });
   
