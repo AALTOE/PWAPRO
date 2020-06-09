@@ -1,6 +1,6 @@
 {
-  "name": "Alex es Batman",
   "short_name": "AA_PWA",
+  "name": "Alex es Batman",
   "description": "Esta es mi app con PWA",
     "icons": [
       {
@@ -36,9 +36,9 @@
 
     ],
     "start_url": "index.html?launcher=true",
-    "scope": "/",
-    "display": "fullscreen",
     "background_color": "#9C27B0",
+    "display": "fullscreen",
+    "scope": "/",
     "theme_color": "#9C27B0"
   }
   
